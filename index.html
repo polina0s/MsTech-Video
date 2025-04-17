@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Video</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+  </head>
+  <body>
+    
+    <div class="container">
+      <div class="video-wrapper">
+        <video playsinline autoplay muted loop id="bgvid">
+          <source src="video.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+      <div class="text-container">
+        <h1>
+          We're here<span class="video-reveal r1"></span>to make<br />
+          healthy<span class="video-reveal r2"></span>living effortless,<br />
+          so you can<span class="video-reveal r3"></span>live longer<br />
+          and happier<span class="video-reveal r4"></span>
+        </h1>
+      </div>
+    </div>
+
+    <svg width="0" height="0" style="position: absolute; z-index: -1">
+      <defs>
+        <clipPath id="revealClipPath"></clipPath>
+      </defs>
+    </svg>
+
+        <script src="script.js"></script>
+    </body>
+</html>
